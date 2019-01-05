@@ -1,0 +1,597 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1B333A54-722C-4E9D-99BC-F3DBFEA4C329}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Library_Management_System</RootNamespace>
+    <AssemblyName>Library Management System</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Pramod\Desktop\LMS\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>7AF307C4E7964DF46BCA42F76F94542DA55E3A09</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Library Management System_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add_user_template.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_user_template.Designer.cs">
+      <DependentUpon>Add_user_template.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book_details.Designer.cs">
+      <DependentUpon>Book_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book_list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book_list.Designer.cs">
+      <DependentUpon>Book_list.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book_list_content.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book_list_content.Designer.cs">
+      <DependentUpon>Book_list_content.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book_shelf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book_shelf.Designer.cs">
+      <DependentUpon>Book_shelf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book_shelf_content.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book_shelf_content.Designer.cs">
+      <DependentUpon>Book_shelf_content.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contact_us_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contact_us_admin.Designer.cs">
+      <DependentUpon>Contact_us_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contact_us_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contact_us_user.Designer.cs">
+      <DependentUpon>Contact_us_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete_registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete_registration.Designer.cs">
+      <DependentUpon>Delete_registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit_registration.Designer.cs">
+      <DependentUpon>Edit_registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Issued_books.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Issued_books.Designer.cs">
+      <DependentUpon>Issued_books.cs</DependentUpon>
+    </Compile>
+    <Compile Include="issued_book_list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="issued_book_list.Designer.cs">
+      <DependentUpon>issued_book_list.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Issue_book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Issue_book.Designer.cs">
+      <DependentUpon>Issue_book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Dashboard.Designer.cs">
+      <DependentUpon>Admin_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New_registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New_registration.Designer.cs">
+      <DependentUpon>New_registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order_book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order_book.Designer.cs">
+      <DependentUpon>Order_book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reset_password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reset_password.Designer.cs">
+      <DependentUpon>Reset_password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Return_book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Return_Book.Designer.cs">
+      <DependentUpon>Return_book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_Dashboard.Designer.cs">
+      <DependentUpon>User_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_list.Designer.cs">
+      <DependentUpon>User_list.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_list_content.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_list_content.Designer.cs">
+      <DependentUpon>User_list_content.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wishlist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wishlist.Designer.cs">
+      <DependentUpon>Wishlist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wishlist_list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wishlist_list.Designer.cs">
+      <DependentUpon>wishlist_list.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add_user_template.resx">
+      <DependentUpon>Add_user_template.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book_details.resx">
+      <DependentUpon>Book_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book_list.resx">
+      <DependentUpon>Book_list.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book_list_content.resx">
+      <DependentUpon>Book_list_content.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book_shelf.resx">
+      <DependentUpon>Book_shelf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book_shelf_content.resx">
+      <DependentUpon>Book_shelf_content.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact_us_admin.resx">
+      <DependentUpon>Contact_us_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact_us_user.resx">
+      <DependentUpon>Contact_us_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete_registration.resx">
+      <DependentUpon>Delete_registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_registration.resx">
+      <DependentUpon>Edit_registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Issued_books.resx">
+      <DependentUpon>Issued_books.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="issued_book_list.resx">
+      <DependentUpon>issued_book_list.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Issue_book.resx">
+      <DependentUpon>Issue_book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Dashboard.resx">
+      <DependentUpon>Admin_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New_registration.resx">
+      <DependentUpon>New_registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order_book.resx">
+      <DependentUpon>Order_book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reset_password.resx">
+      <DependentUpon>Reset_password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Return_Book.resx">
+      <DependentUpon>Return_book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Dashboard.resx">
+      <DependentUpon>User_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_list.resx">
+      <DependentUpon>User_list.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_list_content.resx">
+      <DependentUpon>User_list_content.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wishlist.resx">
+      <DependentUpon>Wishlist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wishlist_list.resx">
+      <DependentUpon>wishlist_list.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Library Management System_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_username.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_pass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_name.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_action_name1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed %2810%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Health-Screen-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download-ebook-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed %289%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed %288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prime user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile_image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fb1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gmail-2-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Instagram_96px_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Google Plus_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\min1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\min2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Facebook_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout Rounded Up_96px_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Export_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Export_96px_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add User Male_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Remove User Male_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Borrow Book_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Return Book_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Books_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7857ae9df63dde2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Circled User Male_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Password_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock 2_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Privacy_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimize Window_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Expand Arrow_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Multiply_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mobile-Smartphone-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1024px-Instagram_logo_2016.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gmail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add List_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Attention_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plus_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minus_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ok_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock 2_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Upload_104px_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\More_104px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xbox Menu_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xbox Menu_96px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xbox Menu_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Circled Up_52px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\In Progress_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search Property_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Double Left_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_details.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no_avatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Circle-icons-profle.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add List_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add Folder_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add Image_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh_96px_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
