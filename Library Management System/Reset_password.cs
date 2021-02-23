@@ -164,7 +164,7 @@ namespace Library_Management_System
                 mail.Body = "Your One Time Password for LMS password change is " + otp;
 
                 smtp.Port = 587;
-                smtp.Credentials = new System.Net.NetworkCredential("lms.pramod.999@gmail.com", "Pramodlms999");
+                smtp.Credentials = new System.Net.NetworkCredential("Your mail id", "Your password");
                 smtp.EnableSsl = true;
 
                 smtp.Send(mail);
